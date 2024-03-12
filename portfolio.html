@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        /* Basic CSS for the navigation menu */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        /* CSS for nested unordered list */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            display: block;
+            margin: 0;
+        }
+        nav ul li ul li a {
+            padding: 5px 10px;
+            display: block;
+            border-radius: 0;
+        }
+        nav ul li ul li a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Projects</a>
+            <ul>
+                <li><a href="#project1">Project 1</a></li>
+                <li><a href="#project2">Project 2</a></li>
+                <li><a href="#project3">Projetc 3</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+</nav>
+
+<!-- Sections of the page -->
+<section id="home">
+    <h2>Home Section</h2>
+    <p>This is the home section.</p>
+</section>
+
+<section id="about">
+    <h2>About Section</h2>
+    <p>This is the about section.</p>
+</section>
+
+<section id="projects">
+    <h2>Project Section</h2>
+    <p>This is the projects section.</p>
+</section>
+
+<section id="project1">
+    <h3>Project 1</h3>
+    <p>This is Service 1.</p>
+</section>
+
+<section id="project2">
+    <h3>Project 2</h3>
+    <p>This is project 2.</p>
+</section>
+
+<section id="project3">
+    <h3>Project 3</h3>
+    <p>This is Project 3.</p>
+</section>
+
+
+
+</body>
+</html>
